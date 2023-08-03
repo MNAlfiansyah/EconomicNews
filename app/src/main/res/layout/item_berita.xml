@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="361dp"
+    android:layout_height="69dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/bg_berita"
+    >
+
+    <ImageView
+        android:id="@+id/photo_berita"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo_default" />
+
+    <TextView
+        android:id="@+id/title_berita"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="Alibaba, silver, gold, Bitcoin, Ethereum: Mike Novogratz's ideal portfolio"
+        android:textColor="#252525"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_berita"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/source_berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="By Cointelegraph"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/photo_berita"
+        app:layout_constraintTop_toBottomOf="@+id/title_berita" />
+
+    <TextView
+        android:id="@+id/summary_berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="-"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/source_berita"
+        app:layout_constraintTop_toBottomOf="@+id/title_berita" />
+
+    <TextView
+        android:id="@+id/tanggal_berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="30 Juli 2023 16:59"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/summary_berita"
+        app:layout_constraintTop_toBottomOf="@+id/title_berita" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
